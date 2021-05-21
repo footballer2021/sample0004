@@ -1,0 +1,206 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Arial", "メイリオ", sans-serif;
+}
+
+body figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_wrapper img {
+  max-height: 40px;
+}
+
+header .header_wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+header .header_wrapper nav ul li {
+  list-style-type: none;
+}
+
+header .header_wrapper nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+header .header_wrapper nav ul li a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(img/noodle.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid #383E45;
+}
+
+@media (max-width: 600px) {
+  .about h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.about .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .about .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about .profile figure {
+  margin-right: 30px;
+}
+
+.about .profile figure img {
+  width: 100px;
+  -webkit-clip-path: circle(50px at 50% 50%);
+          clip-path: circle(50px at 50% 50%);
+  vertical-align: top;
+}
+
+.about .profile .profile_name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about .profile .profile_detail {
+  font-size: 14.4px;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 404px;
+}
+
+.bicycle {
+  text-align: center;
+  margin-top: 73.5px;
+}
+
+.bicycle h2 {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid #383E45;
+  margin-bottom: 60px;
+}
+
+.bicycle .article_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .bicycle .article_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.bicycle .article_wrapper article:not(:last-child) {
+  margin-right: 15.2px;
+}
+
+@media (max-width: 600px) {
+  .bicycle .article_wrapper article:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicycle .article_wrapper article:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.bicycle .article_wrapper > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.bicycle .article_wrapper > * a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bicycle .article_wrapper > * img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.bicycle .article_wrapper > * figcaption {
+  margin-top: 10px;
+}
+
+.bicycle .article_wrapper > * p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 96px;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
