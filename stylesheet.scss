@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+@mixin topic{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 1px solid #383E45;
+
+}
+
+
+body{
+    margin: 0;
+    font-family: "Arial", "メイリオ", sans-serif;
+    figure{
+        margin: 0;
+    }
+}
+
+.container{
+    max-width: 960px;
+    padding:{
+        left: 4%;
+        right: 4%;
+    }
+
+    margin:{
+        left: auto;
+        right: auto;
+    }
+}
+
+header{
+    .header_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            max-height: 40px;
+        }
+
+        nav{
+
+            ul{
+                display: flex;
+                padding-left: 0;
+
+                li{
+                    list-style-type: none;
+                    
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                    
+                    a{
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.hero{
+    background-image: url(img/noodle.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.about{
+    text-align: center;
+
+    h2{
+        @include topic;
+
+        @media(max-width: 600px){
+            margin-bottom: 60px;
+        }
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 600px){
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        figure{
+            margin-right: 30px;
+
+           img{
+                width: 100px;
+                clip-path: circle(50px at 50% 50%);
+                vertical-align: top;
+            }
+        }
+
+        .profile_name{
+            font-size: 16px;
+            font-weight: bold;
+            text-align: start;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .profile_detail{
+            font-size: 14.4px;
+            text-align: start;
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 404px;
+        }
+
+    }
+
+}
+
+.bicycle{
+    text-align: center;
+    margin-top: 73.5px;
+
+    h2{
+        @include topic;
+        margin-bottom: 60px;
+    }
+
+    .article_wrapper{
+        display: flex;
+
+        @media(max-width: 600px){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+            article:not(:last-child){
+                margin-right: 15.2px;
+
+                @media(max-width: 600px){
+                    margin-right: 0;
+                }
+            }
+
+            article:not(:first-child){
+                @media(max-width: 600px){
+                    margin-top: 16px;
+                }
+            }
+        
+
+         & > *{
+            flex: 1 1 0;
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            img{
+                width: 100%;
+                vertical-align: top;
+            }
+
+            figcaption{
+                margin-top: 10px;
+            }
+
+            p{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+footer{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 96px;
+    padding-bottom: 10px;
+}
